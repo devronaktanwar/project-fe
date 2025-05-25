@@ -2,7 +2,6 @@ import React, { FC } from "react";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
 } from "../ui/sheet";

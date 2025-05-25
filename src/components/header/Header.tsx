@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "../ui/button";
-import Image from "next/image";
 import { PiStethoscopeBold } from "react-icons/pi";
 import Count from "./Count";
 
