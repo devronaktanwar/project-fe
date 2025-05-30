@@ -18,9 +18,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
 import { CalendarIcon, Clock } from "lucide-react";
-import { format } from "date-fns";
+// import { format } from "date-fns";
 import { cn } from "@/lib/utils";
 import { twMerge } from "tailwind-merge";
 
@@ -81,10 +80,10 @@ export default function AppointmentForm() {
       setErrors(newErrors);
       return;
     }
-    console.log("Appointment Data:", {
-      ...formData,
-      date: date ? format(date, "PPP") : null,
-    });
+    // console.log("Appointment Data:", {
+    //   ...formData,
+    //   date: date ? format(date, "PPP") : null,
+    // });
     // Handle form submission here
   };
 
@@ -167,7 +166,8 @@ export default function AppointmentForm() {
                     )}
                   >
                     <CalendarIcon className="mr-2 h-4 w-4" />
-                    {date ? format(date, "PPP") : "Pick a date"}
+                    {/* {date ? format(date, "PPP") : "Pick a date"} */}
+                    {"Pick a date"}
                   </Button>
                 </PopoverTrigger>
                 <PopoverContent className="w-auto p-0" align="start">
